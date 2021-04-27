@@ -104,8 +104,8 @@
     foreach ($articles as $article) {
       $elem = [];
       $elem["ref"] = $article->getRef();
-      $elem["titre"] = $article->getName();
-      $elem["prix"] = $article->getPrice();
+      $elem["name"] = $article->getName();
+      $elem["price"] = $article->getPrice();
 
       array_push($data, $elem);
     }
