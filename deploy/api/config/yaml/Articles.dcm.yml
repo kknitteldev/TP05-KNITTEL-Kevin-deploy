@@ -1,0 +1,26 @@
+Articles:
+    type: entity
+    table: articles
+    id:
+        ref:
+            type: string
+            nullable: false
+            length: 8
+            options:
+                fixed: false
+            id: true
+            generator:
+                strategy: SEQUENCE
+    fields:
+        name:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        price:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+    lifecycleCallbacks: {  }

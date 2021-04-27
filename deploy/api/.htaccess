@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteBase /api
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /api/index.php [QSA,L]
+
+Header set Access-Control-Allow-Origin 'http://localhost:4200/'
+Header set Access-Control-Allow-Headers 'Content-Type, Authorization'
