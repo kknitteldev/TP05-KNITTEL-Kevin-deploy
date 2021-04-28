@@ -40,8 +40,7 @@
         "/hello",
         "/api/hello",
         "/api/login",
-        "/api/createUser",
-        "/api/catalogue"
+        "/api/createUser"
       ],
       "error" => function ($response, $arguments) {
           $data = array('ERREUR' => 'Connexion', 'ERREUR' => 'JWT Non valide');
